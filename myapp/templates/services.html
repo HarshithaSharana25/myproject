@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+
+{% block title %}Services Provided{% endblock %}
+
+{% block content %}
+
+<style>
+    .content-container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Space between the sections */
+        align-items: flex-start; /* Align items at the start vertically */
+        padding: 20px; /* Padding around the container */
+        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    }
+
+    .service-section {
+        background-color: #f9f9f9; /* Light gray background */
+        padding: 20px; /* Padding around the content */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for a subtle lift effect */
+        max-width: 30%; /* Set a maximum width */
+        flex: 1; /* Allow flex-grow */
+        margin: 10px; /* Margin around the sections */
+        font-family: 'Helvetica', sans-serif; /* Change to desired font */
+    }
+
+    .service-section h1 {
+        font-size: 24px; /* Font size for the heading */
+        color: #333; /* Dark text color */
+    }
+
+    .service-section p {
+        font-size: 16px; /* Font size for paragraphs */
+        line-height: 1.6; /* Line height for readability */
+        color: #666; /* Slightly darker text color */
+    }
+</style>
+
+<div class="content-container">
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon1.png" border-radius="45%"/><br><br>Audit & Assurance</h1>
+        <p>
+            HR Associates provides audit services as per the requirements under Companies Act, Income Tax Act, 
+            Banking Regulation Act, NABARD, etc. We have been providing this service over the last three decades.
+            <br><br><br>
+        </p>
+    </div>
+    
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon2.png" border-radius="45%"/><br><br>Income Tax</h1>
+        <p>
+            HR Associates, Chartered Accountants provides Income Tax services such as Tax audit, Transfer Pricing study and reporting, tax consultation, 
+            NRI taxation, Scrutiny assessments, appeals, Capital Gain computation and tax advice.
+            <br><br>
+        </p>
+    </div>
+    
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon3.png" border-radius="45%"/><br><br>Goods and Service Tax(GST)</h1>
+        <p>
+            Goods and Service Tax is a nationwide Indirect taxation system in India. We, at HR Associates. 
+            provide various services under GST namely, registration, audits, consultation on product classification, 
+            opinions, obtaining LUT, etc.
+
+
+        </p>
+    </div>
+</div>
+<div class="content-container">
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon4.png" border-radius="45%"/><br><br>Accounting And Payroll</h1>
+        <p>
+            Hiring a full-time accountant and HR personnel is an expensive proposition for small companies.
+            In order to meet their requirements, we at Balakrishna and Co., provide accounting, payroll and compliance services.
+            <br><br><br>
+        </p>
+    </div>
+    
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon6.png" border-radius="45%"/><br><br>NRI services</h1>
+        <p>
+            We have been rendering Non Resident Indian (NRI) Services in for the last three decades. As per our experience,
+            Non Resident Indians often need the following services, specially tax matters related to sale of property.
+            <br><br><br><br>
+        </p>
+    </div>
+    
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon7.png" border-radius="45%"/><br><br>Setting Up New Company</h1>
+        <p>
+            We have been serving hundreds of clients ranging from individuals, proprietary concerns, firms, LLPs and companies.
+            Practically we have worked on all forms of entities and thus gained sufficient working knowledge
+            <br><br><br>
+        </p>
+    </div>
+</div>
+<div class="content-container">
+    <div class="service-section">
+        <h1><img src="https://www.balakrishnaandco.com/images/icon8.png" border-radius="45%"/><br><br>Registrations</h1>
+        <p>
+            Incorporation of the company or firm is the first step to commencing a business in India. Post-incorporation of the entity, 
+            it has to get the registrations done under various statutes such as GST, Shops and Establishment, Profession Tax, etc.
+            <br><br><br>
+        </p>
+    </div>
+</div>
+
+{% endblock %}

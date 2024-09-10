@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %}Services Provided{% endblock %}
+
+{% block content %}
+<html>
+<style>
+    /* Add some basic styling to the form */
+    form {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: 'Helvetica', sans-serif;
+    }
+  
+    /* Style the labels and inputs */
+    label {
+      display: block;
+      margin-bottom: 10px;
+      
+      
+    }
+  
+    label span {
+      display: inline-block;
+      width: 100px;
+      font-weight: bold; /* Make label text bold */
+      font-size: 18px; /* Increase font size */
+      color: #333; /* Change text color */
+      font-family: Arial, sans-serif; /* Change font family */
+      text-align:center;
+      
+    }
+  
+    input[type="text"], input[type="tel"], input[type="email"], textarea {
+      width: 90%;
+      height: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  
+    input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus {
+      border-color: #aaa;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    /* Style the submit button */
+    input[type="submit"] {
+      width: 10%;
+      height: 40px;
+      margin-top: 20px;
+      padding: 10px;
+      background-color:#686868;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+  
+  <form method="post" action="{% url 'saveEnquiry'%}" id="contact">
+    {% csrf_token %}
+    <label for="name"><center><span ></span></center>
+    <center><input type="text" id="name" name="name"placeholder="Name"></label></center>
+  
+    <label for="contact"><center><span></span></center>
+    <center><input type="tel" id="contact" name="contact"placeholder="Contact" ></label></center>
+  
+    <label for="email"><center><span></span></center>
+    <center><input type="email" id="email" name="email" placeholder="Email"></label></center>
+  
+    <label for="text"><center><span></span></center>
+    <center><textarea id="text" name="text" placeholder="Enter the message"></textarea></label></center>
+  
+    <center><input type="submit" value="Submit"></center>
+  </form>
+</html>
+{%endblock%}

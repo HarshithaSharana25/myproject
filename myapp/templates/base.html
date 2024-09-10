@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            color: #fff;
+            text-decoration: none;
+            font-size: 2.5rem;
+            font-family:'Georgia';
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 1rem;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="brand">HR Associates</a>
+            <div class="nav-links">
+                <a href="{% url 'about' %}">About Us</a>
+                <div class="nav-links">
+                    <a href="{% url 'services' %}">Our Services</a>
+                    <div class="nav-links">
+                        <a href="{% url 'blog' %}">Blog</a>
+                        <div class="nav-links">
+                            <a href="{% url 'contact' %}">Contact Us</a>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+</body>
+</html>

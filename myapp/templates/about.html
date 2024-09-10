@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<style>
+    .content-container {
+        display: flex; /* Use flexbox for layout */
+        justify-content: space-between; /* Space between the sections */
+        align-items: center; /* Align items vertically center */
+        padding: 20px; /* Padding around the container */
+    }
+
+    .about-section {
+        background-color: #f9f9f9; /* Light gray background */
+        padding: 20px; /* Padding around the content */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for a subtle lift effect */
+        max-width: 600px; /* Set a maximum width */
+        margin: 0 5px 0 0; /* Margin to the right */
+        font-family: 'Helvetica', sans-serif; /* Change to desired font */
+        flex: 1; /* Allow flex-grow */
+    }
+
+    .about-section h1 {
+        font-size: 28px; /* Larger font size for the heading */
+        color: #333; /* Dark text color */
+        font-family: 'Lucida Handwriting';
+    }
+
+    .about-section p {
+        font-size: 16px; /* Normal font size for paragraphs */
+        line-height: 1.6; /* Line height for readability */
+        color: #666; /* Slightly darker text color */
+    }
+
+    .gif-section {
+        max-width: 1200px; /* Set a maximum width */
+        flex: 1; /* Allow flex-grow */
+        margin-left: 120px; /* Increase margin to the left for more space */
+    }
+
+    .gif-section img {
+        max-width: 100%; /* Ensure the image fits within the container */
+        border-radius: 8px; /* Optional: Rounded corners for the image */
+    }
+</style>
+
+<div class="content-container">
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>
+           HR Associates comes with a team of highly dedicated chartered accountants in Bangalore.
+           We are committed to offering top-notch financial and business solutions. We are a full
+           service accounting firm. Services we offer include, accounting and tax planning, Compliance
+           outsourcing, helping setup a foreign subsidiary company in India, and many more.<br> 
+           As one of the well-known CA firms in Bangalore, we aim to allow clients achieve financial success
+           and grow quickly by absorbing all the compliance burden and letting the business owner concentrate
+           on core business operations.<br><br>
+
+           So, if you are looking for stress free accounting, compliances and auditing services in Bangalore, 
+           you may reach out to HR Associates and opt for their services.<br>
+        </p>
+    </div>
+    
+    <div class="gif-section">
+        <img src="https://i.pinimg.com/originals/50/78/a0/5078a05eb1b6847d93383eaa4c0ed500.gif" width="100%"; alt="Finance GIF"/>
+    </div>    
+</div>
+<br><br><br><br>
+
+<div class="content-container">
+    <div class="about-section">
+        <h1>Why are we here?</h1>
+        <p>
+            We envision a world where taxes are no longer a source of frustration or anxiety for people.
+            We want to make the tax filing process as simple and accessible as possible, so that individuals and businesses can focus on their passions and achieve their goals.<br> 
+        
+        </p>
+    </div>
+    <div class="gif-section">
+        <img src="https://www.jkewtrust.in/public/web/assets/img/2.png" alt="Finance GIF"/>
+    </div>    
+</div>
+<br><br>
+<div class="content-container">
+    <div class="gif-section">
+        <img src="https://bcom.klenagarbhavi.edu.in/wp-content/uploads/2022/05/pastedImage0.png" margin:20px; alt="Finance GIF"/>
+    </div> 
+    <div class="about-section" style="text-align: right;">
+        <h1>Achieving our Vision...</h1>
+        <p>
+        To achieve our vision, we aim to provide exceptional tax computation and ITR filing services to our clients.    
+        We believe that by combining our team's expertise with user-friendly technology, we can simplify the tax filing process and help our clients achieve greater financial security.<br> 
+        </p>
+    </div>
+</div>
+
+
+{% endblock %}
